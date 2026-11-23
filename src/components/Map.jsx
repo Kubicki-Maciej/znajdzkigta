@@ -40,7 +40,7 @@ export default function Map() {
 
                 {/* Obraz mapy */}
                 <img
-                    src="`${process.env.PUBLIC_URL}/map.png"
+                    src={`${process.env.PUBLIC_URL}/map.png`}
                     className="map-image"
                     alt="Mapa"
                 />
