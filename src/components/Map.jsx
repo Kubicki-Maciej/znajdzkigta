@@ -40,7 +40,7 @@ export default function Map() {
 
                 {/* Obraz mapy */}
                 <img
-                    src="/map.png"
+                    src="`${process.env.PUBLIC_URL}/map.png"
                     className="map-image"
                     alt="Mapa"
                 />
@@ -106,7 +106,7 @@ export default function Map() {
 
                         {/* Zdjęcie */}
                         <img
-                            src={`/images/${selectedPoint.name}`}
+                            src={`${process.env.PUBLIC_URL}/images/${selectedPoint.name}`}
                             alt={selectedPoint.name}
                             className="modal-image"
                             onError={(e) => {
